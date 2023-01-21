@@ -1,0 +1,36 @@
+h1, h2, h3, h4, th, td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+    font-family:'Times New Roman', Times, serif
+}
+
+section {
+    border-bottom: 1px solid black;
+}
+
+img {
+    float:right;
+    margin-left:20px;
+}
+
+body {
+    padding: 0 100px 0 100px;
+    line-height: 1.5em;
+}
+
+th {
+    background-color: black;
+    color:white;
+    padding: 15px;
+    font-weight: bold;
+
+}
+
+td {
+    background-color: #eee;
+    color:black;
+    padding: 15px;
+}
