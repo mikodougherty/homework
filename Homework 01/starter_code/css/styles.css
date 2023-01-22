@@ -1,10 +1,11 @@
-h1, h2, h3, h4, th, td {
+h1, h2, h3, h4, th, td, li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
     line-height: 1.5em;
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
 section {
