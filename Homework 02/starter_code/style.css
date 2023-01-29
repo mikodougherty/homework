@@ -13,8 +13,99 @@ p {
 
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
 .merriweather { font-family: 'Merriweather', serif; }
-      .oswald { font-family: 'Oswald', sans-serif; }
-        .lato { font-family: 'Lato', sans-serif; }
+.oswald { font-family: 'Oswald', sans-serif; }
+.lato { font-family: 'Lato', sans-serif; }
+
+
+
+ /* Homework Code  */
+.mainHeader {
+  background-color:black;
+  border-bottom: 5px solid #f2ff00;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1.mainLogo {
+  color:#f2ff00;
+  padding:20px;
+}
+
+.mainNav ul {
+  display:flex;
+  gap: 30px;
+  padding-right:50px;
+}
+
+.mainNav ul li a {
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+}
+
+a.navCaps {
+  text-transform:Uppercase;
+}
+
+.topBanner {
+  background-color: #adadad;
+}
+
+.topBanner h2 {
+  font-size:28px;
+  text-align:center;
+  padding:20px;
+  font-style: italic;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom:3px solid #f2ff00;
+}
+
+.mainBanner {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg);
+  background-size:cover;
+  background-position: center;
+  height:500px;
+  display:flex;
+  justify-content: flex-end;
+  align-items:center;
+}
+
+.bannerBox {
+  background-color: rgba(255,255,255,0.9);
+  width:30%;
+  padding: 50px;
+  margin-right: 50px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 75%)
+}
+
+.bannerBox h3 {
+  font-size:24px;
+  font-weight:700;
+}
+
+.bannerBox p {
+  font-size:18px;
+}
+
+.yellowButton {
+  display:block;
+  border-radius:5px;
+  text-align: center;
+  padding: 10px 30px;
+  border-bottom: 2px solid #ffd900;
+  font-size:24px;
+  background-color: #f2ff00;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
 
 /* Colors */
 /* Dark yellow: #f2ff00 */
