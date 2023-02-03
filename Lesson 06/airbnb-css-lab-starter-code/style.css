@@ -1,0 +1,195 @@
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray for backgrounds: #efefef */
+/* Very light gray for borders: #dbdbdb */
+/* Dark gray for footer: #0e0f0f */
+/* White for text and backgrounds: #FFFFFF */
+
+
+/* Background image links */
+/* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
+
+
+.ab_topnav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:10px 30px;
+}
+
+.ab_topnav_logo {
+  display:block;
+}
+
+.ab_topnav_logo img {
+  max-height:30px;
+}
+
+.ab_topnav_nav {
+  display:flex;
+  justify-content: space-between;
+  gap:20px;
+}
+
+.ab_topnav_nav li {
+  list-style:none;
+  font-size:14px;
+  font-weight: bold;
+}
+
+.ab_topnav_nav a {
+  text-decoration:none;
+  color:black;
+}
+
+/* Hero Bar */
+.ab_hero {
+  background-image: url(melbourne.jpg);
+  background-position: center; 
+  background-size:cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height:500px;
+}
+
+.ab_hero_inner {
+  max-width:400px;
+  color:white;
+}
+
+.ab_hero_inner h1 {
+  font-size: 64px;
+  text-align:center;
+}
+
+.ab_hero_inner p {
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  margin-top:0;
+}
+
+
+/* Button */
+.ab_btn, 
+.ab_btn:link, 
+.ab_btn:visited {
+  display:block;
+  background-color:#ff5358;
+  text-decoration:none;
+  color:white;
+  text-align:center;
+  max-width:240px;
+  padding:15px;
+  font-size:18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-bottom:1px solid #e00007; 
+  box-sizing:border-box;
+  margin:0 auto;
+}
+
+.ab_btn:hover {
+  background-color:#e00007;
+}
+
+/* Commentary Col */
+
+.ab_commentary {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  background-color:#efefef;
+  padding:30px;
+  gap:30px;
+}
+
+/* locals block */
+.ab_locals {
+  background-color:white;
+  border:1px solid #dbdbdb;
+}
+
+.ab_locals > header {
+  background-color: #efefef;
+  padding: 10px 20px;
+}
+
+.ab_locals header h1 {
+  font-size:14px;
+}
+
+.ab_locals > div {
+  display:flex;
+  padding: 10px 20px;
+  gap:10px;
+  align-items: center;
+}
+
+/* three columns */
+.ab_featured_trio {
+  padding:40px 0;
+}
+
+.ab_featured_trio_header {
+  text-align: center;
+  padding
+}
+
+.ab_featured_trio_header h1 {
+  font-size:30px;
+  font-weight:bold;
+}
+
+.ab_featured_trio_header p {
+  font-size:14px;
+  font-weight: bold;
+}
+
+.ab_featured_trio_triple_column {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:20px;
+  gap:20px;
+}
+
+.ab_neighborhood {
+  border:1px solid #dbdbdb;
+  background-color: #efefef;
+  display:grid;
+  grid-template-rows:300px 90px;
+}
+
+.ab_neighborhood > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  background-size: cover;
+}
+
+#neigh_fitzrow {
+  background-image: url(fitzroy.jpg);
+}
+
+#neigh_stkilda {
+  background-image: url(st-kilda.jpg);
+}
+
+#neigh_central {
+  background-image: url(central-business-district.jpg);
+}
