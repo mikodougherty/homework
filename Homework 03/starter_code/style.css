@@ -1,0 +1,319 @@
+/* ### Colors
+Green: #20c063 / RGBA(32,192,99,1)
+Gray: #e8e9ea  / RGBA (232,233,234,1)
+Dark Text: #3b4144 / RGBA (59,65,68,1) */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tl_topnav_nav {
+    display:flex;
+    gap:10px;
+    justify-content: space-between;
+}
+
+.tl_topnav_left {
+    display:flex;
+    gap:10px;
+    list-style:none;
+    padding-left:0;
+}
+
+.tl_topnav_nav a {
+    color:white;
+    text-decoration: none;
+}
+
+.tl_topnav_right {
+    display:flex;
+    gap:10px;
+    list-style:none;
+    padding-left:0;
+}
+
+
+.tl_topnav {
+    background-color:#20c063;
+    padding: 5px 20px;
+    /* display:flex; */
+    gap:20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tl_topnav_logo img {
+    max-height:20px;
+}
+
+.tl_topnav_logo {
+    /* display:flex; */
+}
+
+.circle {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    display: inline;
+    text-align: center;
+    padding: 5px;
+}
+
+/* search results */
+.tl_listings_searchresults {
+    padding: 15px 0 5px 0;
+}
+.tl_listings_searchresults ul {
+    display:flex;
+    gap:15px;
+}
+
+.tl_listings_searchresults ul {
+    list-style: none;
+    padding-left:25px;
+}
+
+.tl_listings_searchresults li:first-child {
+    font-weight: bold;
+}
+
+
+
+/* Three Column Grid */
+.tl_listings {
+    background-color:#e8e9ea;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    padding:10px;
+}
+
+.tl_three_col {
+    display:flex;
+    gap:15px;
+    height: 25px;
+}
+
+.tl_three_col p {
+    margin-top:0;
+}
+
+.tl_three_col img {
+    max-height: 15px;
+    padding-right: 5px;
+}
+
+.tl_listings_box {
+    display: grid;
+    grid-template-rows: 150px 118px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.tl_listings_box > section {
+    padding:10px;
+}
+
+.tl_listings_info h1 {
+    margin-top:0;
+    font-size:16px;
+}
+
+.tl_listings_info h1 img {
+    max-height: 15px;
+}
+
+p.tl_listings_address {
+    margin:0;
+    color:#b5b6b6;
+}
+
+.greenbox {
+    background-color: #20c063;
+    color: white;
+    width: 40px;
+    padding-left: 5px;
+    margin: 0;
+    border-radius: 5px 0 0 0;
+    text-transform: uppercase;
+    opacity:0.8;
+    font-size:14px;
+}
+
+.graybox {
+    background-color: gray;
+    color: white;
+    width: 85px;
+    padding-left: 5px;
+    margin: 0;
+    border-radius: 5px 0 0 0;
+    text-transform: uppercase;
+    opacity:0.8;
+    font-size:14px;
+    line-height:1em;
+}
+
+/* Next Pages Navigation */
+
+.tl_footer_nav ul {
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left:0;
+}
+
+.tl_footer_nav ul li a {
+    color:#3a8e52;
+    text-decoration: none;
+}
+
+.tl_results {
+    color:#787d81;
+    text-align:center;
+}
+
+.tl_footer_nav2 ul {
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left:0;
+}
+
+.tl_footer_nav2 ul li a {
+    text-decoration:none;
+    color:#3a8e52;
+}
+
+.tl_disclaimer p a {
+    text-decoration:none;
+    color:#3a8e52;
+}
+
+.tl_disclaimer p {
+    font-size:14px;
+}
+
+.tl_disclaimer h1 {
+    font-size:21px;
+}
+
+.tl_disclaimer {
+    margin:50px 150px 50px 50px;
+}
+
+footer {
+    background-color:#474E52;
+    padding:10px;
+}
+
+footer ul {
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+footer p {
+    color:#e8e9ea;
+    font-size:10px;
+    text-align:center;
+}
+
+
+
+
+/* Pictures */
+#picture1 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture2 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture3 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture4 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture5 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture6 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture7 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture8 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture9 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture10 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture11 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#picture12 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
