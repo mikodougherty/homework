@@ -40,7 +40,6 @@ body {
 .tl_topnav {
     background-color:#20c063;
     padding: 0 20px;
-    /* display:flex; */
     gap:20px;
     justify-content: space-between;
     align-items: center;
@@ -48,10 +47,6 @@ body {
 
 .tl_topnav_logo {
     max-height:20px;
-}
-
-.tl_topnav_logo {
-    /* display:flex; */
 }
 
 .circle {
