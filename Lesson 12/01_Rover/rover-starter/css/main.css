@@ -1,0 +1,322 @@
+/*
+ * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * Dark Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  color: #1b1f23;
+  margin:0;
+  height:auto;
+  display:block;
+  width:100%;
+  overflow-x:hidden;
+}
+
+.container_fixed {
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.site_header_inner {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.navigation_first {
+  display:flex;
+  gap:20px;
+}
+
+.navigation_first li {
+  list-style-type: none;
+}
+
+.navigation_first a {
+  text-decoration: none;
+  color:#66727c;
+}
+
+.sign_up {
+  display:flex;
+  justify-content: flex-start;
+  gap:20px;
+}
+
+.sign_up li {
+  list-style-type: none;
+}
+
+.sign_up a {
+  text-decoration: none;
+  color:#66727c;
+}
+
+.logo img {
+  max-height: 75px;
+}
+
+@media screen and (min-width:800px) {
+  .burger {
+    display:none;
+  }
+}
+
+.rover_hero_container {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  padding-top:200px;
+  padding-bottom:200px;
+}
+
+h1.hero_hdr {
+  color:#66727c;
+  font-size:50px;
+}
+
+p.hero_tagline {
+  color:#66727c;
+  font-size:35px;
+  padding-bottom:30px;
+}
+
+.hero_callout {
+  width:500px;
+}
+
+
+
+h1.section_hdr {
+  text-align:center;
+  font-size:25px;
+  padding-top:40px;
+}
+
+.rover_facts_2col {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.rover_facts_container li {
+  list-style-type: none;
+  display:flex;
+  gap:10px;
+}
+
+.facts-text p {
+  margin-top:5px;
+}
+
+.facts-text h2 {
+  margin-bottom:10px;
+}
+
+.rover-cta-box-container {
+
+}
+
+.rover_cta_box_content {
+  border:1px solid #c4d7de;
+  border-radius: 5px;
+}
+
+.rover_cta_header {
+  background-color:#f4f5f6;
+  display:flex;
+  gap:10px;
+  align-items: center;
+}
+
+.rover_cta_header img {
+  max-width:75px;
+  padding:20px;
+}
+
+.rover_facts li {
+  list-style-type: none;
+  padding-bottom:15px;
+}
+
+.rover_facts {
+  padding:40px;
+}
+
+i.fa-check {
+  color:#14a96d;
+}
+
+.btn {
+  background-color:#14a96d;
+  color:white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px 75px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn_hero  {
+  background-color:#14a96d;
+  color:white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px 50px;
+  width:50%;
+  display:block;
+  margin-left: 0;
+}
+
+.rover-cta {
+  text-align:center;
+}
+
+.rover_protections {
+  text-align:center;
+}
+
+.rover_action_shot {
+  background-image: url("../img/lady-with-her-dogs.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top:50px;
+  padding-bottom:120px;
+}
+
+.rover_action_quote_container {
+  background-color: white;
+  width:40%;
+  padding:30px;
+  border:1px solid black;
+  border-radius: 5px;
+  margin-left: 65px;
+  margin-top: -110px;
+}
+
+p.rover_quote {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.rover_action_dash {
+  border-top: 5px solid #14a96d;
+  width: 20%;
+}
+
+.rover_quote span {
+  color:#66727c;
+}
+
+.rover_action_quote_tagline a {
+  color:#06748a;
+  text-decoration: none;
+}
+
+.rover_123_item_container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+  padding-top:50px;
+  text-align:center;
+}
+
+.rover_123_item img {
+  max-height:75px;
+}
+
+@media screen and (min-width:1159px) {
+  .burger {
+    display:none;
+  }
+  .rover-mobile-hero-container {
+    display:none;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .navigation {
+    display:none;
+  }
+  .burger {
+    display:block;
+    margin-right:30px;
+  }
+  .fa-bars {
+    font-size:30px;
+  }
+  .rover-mobile-hero-container {
+    display:none;
+  }
+}
+
+@media screen and (max-width:960px) {
+  .hero_callout {
+    background-color: white;
+    padding:20px;
+  }
+  .rover-mobile-hero-container {
+    display:none;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .rover_hero_container {
+    background-image: none;
+    padding-top:0;
+    padding-bottom:0;
+  }
+  .hero_hdr {
+    display:none;
+  }
+  p.hero_tagline {
+    font-size:25px;
+    font-weight:bold;
+  }
+  .btn_hero {
+    width:100%;
+  }
+  .rover-mobile-hero-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    margin: 0 20px;
+  }
+  .rover-mobile-hero {
+    width:100%;
+  }
+  .rover_facts_2col {
+    display:block;
+    margin:0 20px;
+  }
+  .rover_action_quote_container {
+    width: 100%;
+    border: none;
+    margin-left: 0;
+}
+}
