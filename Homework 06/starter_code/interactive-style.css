@@ -1,0 +1,24 @@
+/* Featured and Expanded Item */
+@media screen and (max-width:900px) {
+    .trulia-nav-toggle {
+        display:block;
+        color:white;
+        margin-right: 30px;
+        font-size: 25px;
+    }
+    .trulia-nav-mobilehide {
+        display:none;
+    }
+    .trulia-nav-mobileshow {
+        display:block;
+    }
+}
+
+
+.trulia-grid-item {
+
+}
+
+.trulia-featured-grid-item {
+
+}
