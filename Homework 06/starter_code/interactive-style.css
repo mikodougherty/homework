@@ -9,11 +9,11 @@
     .trulia-nav-mobilehide {
         display:none;
     }
-    .trulia-nav-mobileshow {
-        display:block;
-    }
 }
 
+.trulia-nav-mobileshow {
+    display:block;
+}
 
 .trulia-grid-item {
 

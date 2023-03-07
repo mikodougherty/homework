@@ -10,11 +10,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
 document.querySelector(".trulia-nav-toggle").addEventListener('click',function(e){
   e.preventDefault();
   document.querySelector(".trulia-nav-mobilehide").classList.toggle("trulia-nav-mobileshow");
+  
 });
 
 
 
-
+for (let i=0; i < truliaCards.length ;i++) {
+  document.querySelector(".trulia-grid-item").addEventListener('click', funtion(e){
+    e.preventDefault();
+  })
+}
 
 // Loop through all the cards
     
