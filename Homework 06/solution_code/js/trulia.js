@@ -41,7 +41,7 @@ for (var i = 0; i < truliaCards.length; i++){
       // Add the featured class on the one clicked on
       this.classList.add('trulia-featured-grid-item');
   });
-}
+  }
 
   });  
 

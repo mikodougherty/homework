@@ -6,33 +6,31 @@ let truliaCards = document.getElementsByClassName("trulia-grid-item");
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
-// Toggle the navigation
-document.querySelector(".trulia-nav-toggle").addEventListener('click',function(e){
-  e.preventDefault();
-  document.querySelector(".trulia-nav-mobilehide").classList.toggle("trulia-nav-mobileshow");
-  
-});
-
-
-
-for (let i=0; i < truliaCards.length ;i++) {
-  document.querySelector(".trulia-grid-item").addEventListener('click', funtion(e){
+  document.querySelector(".trulia-nav-toggle").addEventListener('click',function(e){
     e.preventDefault();
-  })
-}
+    let navSet = document.querySelectorAll('.trulia-nav > nav ul');
 
-// Loop through all the cards
-    
-  // Add a click listener on each card
+    for(let n=0;n<navSet.length;n++){
+        navSet[n].classList.toggle('trulia-nav-mobilehide');
+    }
+  
+  });
+
+
+
+  for (let i=0; i < truliaCards.length; i++) {
+
+  truliaCards[i].addEventListener('click', function(){
+      for (let k=0; k < truliaCards.length; k++) {
+        truliaCards[k].classList.remove('trulia-featured-grid-item');
+      }
       
-      // Remove the featured class
+      this.classList.add('trulia-featured-grid-item');
 
+  });
+  }
 
-      // Add the featured class on the one clicked on
-
-
-
-  });  
+});  
 
 
 
